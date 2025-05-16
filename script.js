@@ -17,7 +17,7 @@ convert("usd-to-brl")
 
 //funcao para formatar o valor em reais
 function formatCurrency(value) {
-    let fixedValue = fixValue(value)  
+    let fixedValue = fixValue(value)
     let options = {
         useGrouping: false,
         minimumFractionDigits: 2
@@ -43,7 +43,7 @@ function convert(type) {
         let fixedValue = fixValue(usdInput.value)
         let result = fixedValue * dolar
         result = result.toFixed(2)
-         brlInput.value = formatCurrency(result)
+        brlInput.value = formatCurrency(result)
     }
 
     if (type == "brl-to-usd") {
